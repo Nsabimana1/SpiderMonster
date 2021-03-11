@@ -7,23 +7,25 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+
     public static GameManager Instance { get; private set; }
 
     public GameObject startButton;
     public GameObject creditsButton;
+    public GameObject controlsButton;
     public GameObject backgroundImage;
     public GameObject events;
     public GameObject canvas;
-    // Start is called before the first frame update
+
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void Awake()
@@ -46,11 +48,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LoadYourAsyncScene(string scene)
     {
-        // The Application loads the Scene in the background as the current Scene runs.
-        // This is particularly good for creating loading screens.
-        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
-        // a sceneBuildIndex of 1 as shown in Build Settings.
-
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
 
         // Wait until the asynchronous scene fully loads
@@ -80,12 +77,26 @@ public class GameManager : MonoBehaviour
     public void StartButton()
     {
         startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("Level"));
+        Travel("Level");
     }
 
     public void CreditsButton()
     {
         creditsButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("Credits"));
+        Travel("Credits");
+    }
+
+    public void ControlsButton()
+    {
+        controlsButton.SetActive(false);
+        Travel("Controls");
+    }
+
+    public void GameOver()
+    {
+        startButton.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 2f));
+
     }
 }
