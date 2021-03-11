@@ -676,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleButton: {fileID: 1925983504}
+  backgroundImage: {fileID: 1384031336}
 --- !u!4 &1243414318
 Transform:
   m_ObjectHideFlags: 0

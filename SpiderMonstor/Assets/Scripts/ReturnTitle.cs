@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ReturnTitle : MonoBehaviour
 {
     public GameObject titleButton;
+    public GameObject backgroundImage;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +40,23 @@ public class ReturnTitle : MonoBehaviour
         {
             yield return null;
         }
+        StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2f));
     }
+
+    IEnumerator ColorLerp(Color endValue, float duration)
+    {
+        float time = 0;
+        Image sprite = backgroundImage.GetComponent<Image>();
+        Color startValue = sprite.color;
+
+        while (time < duration)
+        {
+            sprite.color = Color.Lerp(startValue, endValue, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        sprite.color = endValue;
+    }
+
 }
