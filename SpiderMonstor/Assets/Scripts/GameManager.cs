@@ -77,19 +77,19 @@ public class GameManager : MonoBehaviour
     public void StartButton()
     {
         startButton.SetActive(false);
-        Travel("Level");
+        Travel("level");
     }
 
     public void CreditsButton()
     {
         creditsButton.SetActive(false);
-        Travel("Credits");
+        Travel("credits");
     }
 
     public void ControlsButton()
     {
         controlsButton.SetActive(false);
-        Travel("Controls");
+        Travel("controls");
     }
 
     public void GameOver()
@@ -97,6 +97,5 @@ public class GameManager : MonoBehaviour
         startButton.SetActive(true);
         StopAllCoroutines();
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 1), 2f));
-
     }
 }
