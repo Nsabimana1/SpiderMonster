@@ -6,7 +6,8 @@ public class Health : MonoBehaviour
 {
     public int currentHealth = 0;
     public int maxHealth = 100;
-    public HealthBar healthBar;
+
+    public HealthBarCustom healthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,6 @@ public class Health : MonoBehaviour
     public void DamagePlayer(int damage)
     {
         currentHealth -= damage;
-        healthBar.setHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
     }
 }
