@@ -9,6 +9,14 @@ public class Health : MonoBehaviour
 
     public HealthBarCustom healthBar;
 
+    void OnTriggerEnter2D(Collider2D collider2D)
+    {
+        if (collider2D.CompareTag("Spider"))
+        {
+            DamagePlayer(10);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +30,9 @@ public class Health : MonoBehaviour
         {
             DamagePlayer(10);
         }
+
+
+
     }
 
     public void DamagePlayer(int damage)

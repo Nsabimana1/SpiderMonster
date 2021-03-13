@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 116440673}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (1)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 446833569}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (2)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,6 +653,7 @@ GameObject:
   - component: {fileID: 540256935}
   - component: {fileID: 540256939}
   - component: {fileID: 540256940}
+  - component: {fileID: 540256941}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -789,6 +790,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
+  maxHealth: 100
+  healthBar: {fileID: 2022268000}
+--- !u!114 &540256941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540256934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3997dd047c35b1d4f9f9673ec90dc132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
   maxHealth: 100
   healthBar: {fileID: 2022268000}
 --- !u!1 &619923222
@@ -2494,7 +2510,7 @@ GameObject:
   - component: {fileID: 785979288}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (6)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5760,7 +5776,7 @@ GameObject:
   - component: {fileID: 1450436098}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (5)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5915,9 +5931,10 @@ GameObject:
   - component: {fileID: 1481552551}
   - component: {fileID: 1481552550}
   - component: {fileID: 1481552549}
+  - component: {fileID: 1481552555}
   m_Layer: 0
   m_Name: Spider (Brown)_0
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6058,6 +6075,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1481552555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481552548}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15f6b811fdbf47419451c05ffe31f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  target: {fileID: 619923222}
+  dog: {fileID: 540256934}
 --- !u!1 &1644483778
 GameObject:
   m_ObjectHideFlags: 0
@@ -6074,7 +6106,7 @@ GameObject:
   - component: {fileID: 1644483779}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (3)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6231,7 +6263,7 @@ GameObject:
   - component: {fileID: 1782065201}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (4)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6511,7 +6543,7 @@ GameObject:
   - component: {fileID: 1849471213}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (7)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

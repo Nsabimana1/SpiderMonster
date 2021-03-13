@@ -61,17 +61,17 @@ public class GameManager : MonoBehaviour
     IEnumerator ColorLerp(Color endValue, float duration)
     {
         float time = 0;
-        Image sprite = backgroundImage.GetComponent<Image>();
-        Color startValue = sprite.color;
+            Image sprite = backgroundImage.GetComponent<Image>();
+            Color startValue = sprite.color;
 
-        while (time < duration)
-        {
-            sprite.color = Color.Lerp(startValue, endValue, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
+            while (time < duration)
+            {
+                sprite.color = Color.Lerp(startValue, endValue, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
 
-        sprite.color = endValue;
+            sprite.color = endValue;
     }
 
     public void StartButton()

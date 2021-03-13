@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 96170071}
   m_Layer: 0
   m_Name: Spider (Brown)_0 (1)
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 962557883}
   m_Layer: 0
   m_Name: Spider (Brown)_0
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 1264714064}
   m_Layer: 0
   m_Name: Spider (Lime)_0
-  m_TagString: Untagged
+  m_TagString: Spider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -749,6 +749,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5423979660539087475, guid: cb4e31d4aab5f5245b93f51b2399fe7a, type: 3}
   m_PrefabInstance: {fileID: 1313744937}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313744939 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5423979660539087436, guid: cb4e31d4aab5f5245b93f51b2399fe7a, type: 3}
+  m_PrefabInstance: {fileID: 1313744937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b32438be6ac7214aa4e694d3c6d45bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1341526771
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +774,7 @@ GameObject:
   - component: {fileID: 1341526774}
   - component: {fileID: 1341526773}
   - component: {fileID: 1341526772}
+  - component: {fileID: 1341526778}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -895,12 +907,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341526771}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.29, y: -2.31, z: 0}
+  m_LocalPosition: {x: 8.29, y: -2.31, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341526778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341526771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3997dd047c35b1d4f9f9673ec90dc132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  healthBar: {fileID: 1313744939}
 --- !u!1 &1631918256
 GameObject:
   m_ObjectHideFlags: 0
