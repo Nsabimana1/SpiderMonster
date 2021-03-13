@@ -249,7 +249,7 @@ MonoBehaviour:
   m_text: 'Move -                                                       WAsd or Arrow
     Keys
 
-    Goal -            Get to the ladder while avoiding the spiders
+    Goal -        Get to the treasure while avoiding the spiders
 
 '
   m_isRightToLeft: 0
