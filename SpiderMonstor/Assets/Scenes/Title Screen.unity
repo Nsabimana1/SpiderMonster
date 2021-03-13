@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Title Placeholder
+  m_text: spinder
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d634212b45ffd7e428ad9391fd1803ad, type: 2}
   m_sharedMaterial: {fileID: 3756723963105783051, guid: d634212b45ffd7e428ad9391fd1803ad, type: 2}
